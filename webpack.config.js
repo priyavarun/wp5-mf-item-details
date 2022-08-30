@@ -41,7 +41,9 @@ module.exports = {
       name: "itemDetails",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./ItemDetails": "./src/App.js"
+      },
       shared: {
         "react": {
           singleton: true,
