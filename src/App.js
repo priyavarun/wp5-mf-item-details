@@ -6,6 +6,7 @@ import {
   BrandingWatermark,
   Speed,
 } from "@mui/icons-material";
+import "./App.scss";
 
 const sampleItemDetails = [
   {
@@ -150,7 +151,7 @@ export default function () {
               <div className="mb-10">Rating is {item.rating}/5</div>
               <div className="mb-10 label">{item.label}</div>
               {item.tags.map((tag) => (
-                <Chip className="tag" label={tag} />
+                <Chip key={tag} className="tag" label={tag} />
               ))}
             </div>
           </div>
